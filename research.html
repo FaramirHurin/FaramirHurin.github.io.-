@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>research · Daniele Lunghi</title>
+<meta name="description" content="Research and publications of Daniele Lunghi.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="top">
+  <a href="index.html">home</a>
+  <a href="research.html" aria-current="page">research</a>
+  <a href="teaching.html">teaching and talks</a>
+  <a href="posts.html">posts</a>
+</nav>
+
+<h1>Research</h1>
+
+<p>My research spans multiple aspects of AI security, including secure code generation, prompt injection and jailbreaking, privacy, poisoning, and evasion. AI security: software engineering, fraud detection, federated learning, face recognition, and LLMs.</p>
+
+<h2>Current work</h2>
+
+<ul class="dash spaced">
+  <li><b>LLM and agent security.</b> Prompt injection in agent skills and skill marketplaces, jailbreaking attacks against aligned models, and, with the École de technologie supérieure in Montréal, an inference-time method that guides models toward safer and higher-quality output by inserting structured comments in their context.</li>
+  <li><b>Federated learning.</b> Backdoors that persist through federated aggregation with minimal attacker participation, in contrastive learning, where the lack of labeled data makes the setting particularly challenging for attackers.</li>
+  <li><b>Face recognition and privacy.</b> Physical protections such as face painting, partly evaluated with the Royal Military Academy in Brussels, and synthetic datasets for training and benchmarking recognition models, including how much they leak about the real faces they were built from.</li>
+  <li><b>Next.</b> The security of the supply chain through which open-weight models reach the organizations that download, fine-tune and deploy them.</li>
+</ul>
+
+<h2>Publications</h2>
+
+<!-- Template for a new entry (newest first):
+  <li>
+    <span class="title">Paper title</span><br>
+    <span class="meta">Co-authors. Venue, year.</span><br>
+    <span class="links"><a href="URL">pdf</a> <a href="URL">code</a></span>
+  </li>
+-->
+<ul class="entries">
+  <li>
+    <span class="title">The Face Camouflage Competition: Benchmarking Face Recognition Robustness to Military Paint Patterns</span><br>
+    <span class="meta">P. Borsukiewicz, C. Beumier, <b>D. Lunghi</b>, J. Klein, T. Debatty, T.F. Bissyandé. International Conference on Computer Vision Theory and Applications (VISAPP), 2027. Accepted.</span>
+  </li>
+  <li>
+    <span class="title">Benchmarking Face Recognition without Real Faces</span><br>
+    <span class="meta">P. Borsukiewicz, <b>D. Lunghi</b>, W.C. Ouédraogo, J. Klein, T.F. Bissyandé. IEEE International Joint Conference on Biometrics (IJCB), 2026.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:WF5omc3nYNoC">scholar</a></span>
+  </li>
+  <li>
+    <span class="title">Fraud-RLA: A Reinforcement Learning Adversarial Attack Against Credit Card Fraud Detection</span><br>
+    <span class="meta"><b>D. Lunghi</b>, Y. Molinghen, A. Simitsis, T. Lenaerts, G. Bontempi. IEEE Transactions on Dependable and Secure Computing (TDSC), 2026.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:IjCSPb-OGe4C">scholar</a></span>
+  </li>
+  <li>
+    <span class="title">Adversarial Learning for Fraud Detection</span><br>
+    <span class="meta"><b>D. Lunghi</b>, A. Simitsis, G. Bontempi. Book chapter in Data Engineering for Data Science, 265–291, 2026.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:YsMSGLbcyi4C">scholar</a></span>
+  </li>
+  <li>
+    <span class="title">Assessing adversarial attacks in real-world fraud detection</span><br>
+    <span class="meta"><b>D. Lunghi</b>, A. Simitsis, G. Bontempi. IEEE International Conference on Web Services (ICWS), 2024.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:2osOgNQ5qMEC">scholar</a></span>
+  </li>
+  <li>
+    <span class="title">An adversary model of fraudsters' behaviour to improve oversampling in credit card fraud detection</span><br>
+    <span class="meta"><b>D. Lunghi</b>, G.M. Paldino, O. Caelen, G. Bontempi. IEEE Access, 11, 136666–136679, 2023.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:9yKSN-GCB0IC">scholar</a></span>
+  </li>
+  <li>
+    <span class="title">Adversarial learning in real-world fraud detection: Challenges and perspectives</span><br>
+    <span class="meta"><b>D. Lunghi</b>, A. Simitsis, O. Caelen, G. Bontempi. 2nd ACM Data Economy Workshop, 2023.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:u-x6o8ySG0sC">scholar</a></span>
+  </li>
+</ul>
+
+<h2>Preprints</h2>
+
+<ul class="entries">
+  <li>
+    <span class="title">Have I Seen You? Embedding Behavior Signals Synthetic Face Dataset Membership</span><br>
+    <span class="meta">P. Borsukiewicz, <b>D. Lunghi</b>, W.C. Ouédraogo, J. Klein, T.F. Bissyandé. arXiv, 2026.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:ufrVoPGSRksC">scholar</a></span>
+  </li>
+  <li>
+    <span class="title">Detecting Malicious Agent Skills in the Wild using Attention</span><br>
+    <span class="meta">B. Etteib, <b>D. Lunghi</b>, T.F. Bissyandé. arXiv, 2026.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:eQOLeE2rZwMC">scholar</a></span>
+  </li>
+  <li>
+    <span class="title">Adversarial Camouflage</span><br>
+    <span class="meta">P. Borsukiewicz, <b>D. Lunghi</b>, M. Tessa, J. Klein, T.F. Bissyandé. arXiv, 2026.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:Y0pCki6q_DkC">scholar</a></span>
+  </li>
+</ul>
+
+<h2>Thesis</h2>
+
+<ul class="entries">
+  <li>
+    <span class="title">Toward Robust Credit Card Fraud Detection: A Domain-Specific Study of Adversarial Machine Learning</span><br>
+    <span class="meta">Ph.D. thesis, Université libre de Bruxelles and National and Kapodistrian University of Athens, 2025.</span><br>
+    <span class="links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGXDf9AAAAAJ&amp;citation_for_view=xGXDf9AAAAAJ:W7OEmFMy1HYC">scholar</a></span>
+  </li>
+</ul>
+
+<p class="muted">Full list on <a href="https://scholar.google.com/citations?user=xGXDf9AAAAAJ&amp;hl=en">Google Scholar</a>.</p>
+
+<h2>Funding and awards</h2>
+
+<ul class="dash spaced">
+  <li><b>Marie Skłodowska-Curie fellow</b> (MSCA-ITN), Ph.D., 2021–2025.</li>
+  <li><b>FNR CORE 2026:</b> principal investigator of a three-year proposal (submitted).</li>
+  <li><b>HORIZON-MSCA-2026:</b> co-wrote the CyberAIGuard4CI application.</li>
+  <li><b>Industry proposal:</b> joint proposal with Proximus during the Ph.D.</li>
+  <li><b>2nd place, AI Cybersecurity DeepHack (UltraHack), April 2025:</b> led a team of Ph.D. students from three universities on data-driven anti-malware detection, covering the adversarial robustness of NLP analysis and secure federated updates.</li>
+</ul>
+
+</body>
+</html>

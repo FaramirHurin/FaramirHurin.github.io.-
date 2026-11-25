@@ -1,0 +1,71 @@
+/* Minimal personal site. Always light, with a white background. */
+
+:root {
+  --bg: #ffffff;
+  --fg: #151515;
+  --muted: #6b6b6b;
+  --rule: #dddddd;
+  --todo-bg: #fff1a8;
+  --todo-fg: #4d3d00;
+  color-scheme: light;
+}
+
+html { background: var(--bg); }
+
+body {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3.5rem 1rem 4rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+a:hover, a:focus-visible { background: var(--fg); color: var(--bg); text-decoration: none; outline: none; }
+
+h1 { font-size: 1.35rem; margin: 0 0 0.75rem; }
+h2 { font-size: 1rem; margin: 2.5rem 0 0.75rem; }
+h3 { font-size: 1rem; font-weight: normal; font-style: italic; margin: 1.5rem 0 0.5rem; }
+p { margin: 0 0 1rem; }
+
+/* portrait on the home page */
+img.portrait { display: block; width: 10rem; height: auto; margin: 0 0 1.25rem; }
+
+/* top navigation on inner pages */
+nav.top { margin-bottom: 2.5rem; }
+nav.top a { margin-right: 1.5ch; }
+nav.top a[aria-current="page"] { text-decoration: none; font-weight: bold; }
+
+/* "- item" lists, as on the home page */
+ul.dash { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+ul.dash li::before { content: "- "; }
+ul.dash.spaced li + li { margin-top: 0.6rem; }
+
+/* publications, talks, videos */
+ul.entries { list-style: none; padding: 0; margin: 0; }
+ul.entries li { margin: 0 0 1rem; }
+.title { font-weight: bold; }
+.meta, .muted { color: var(--muted); }
+.links a { margin-right: 1ch; }
+
+/* posts */
+article.post { margin: 0 0 2.25rem; padding-bottom: 2.25rem; border-bottom: 1px dashed var(--rule); }
+article.post:last-of-type { border-bottom: none; }
+article.post h2 { margin: 0 0 0.5rem; }
+article.post h2 a { text-decoration: none; }
+article.post h2 a:hover { text-decoration: none; }
+
+/* optional embedded video, see talks.html */
+.video { position: relative; aspect-ratio: 16 / 9; margin: 0.5rem 0 1rem; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* Things to check or fill before publishing. Search the files for "todo". */
+.todo { background: var(--todo-bg); color: var(--todo-fg); padding: 0 0.3em; }
+
+hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+footer { margin-top: 4rem; color: var(--muted); font-size: 13px; }
